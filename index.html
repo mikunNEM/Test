@@ -73,7 +73,8 @@
     
    if(!popup) return;
    popup.classList.add('is-show');
-   popup.classList.remove('is-show'); 
+    console.log("is-show=");//
+    console.log('is-show');   //
     
 
    var blackBg = document.getElementById('js-black-bg');
@@ -90,6 +91,9 @@
      if(!elem) return;
      elem.addEventListener('click', function() {
        console.log("関数closePopUpの中だよ");
+       popup.classList.remove('is-show');
+       console.log("is-show=");//
+       console.log('is-show');   //
        
      })
    }

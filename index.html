@@ -64,6 +64,26 @@
   
   <script type="text/javascript" src="https://xembook.github.io/nem2-browserify/symbol-sdk-pack-1.0.3.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  
+  <script>
+  window.onload = function() {
+   var popup = document.getElementById('js-popup');
+   if(!popup) return;
+   popup.classList.add('is-show');
+
+   var blackBg = document.getElementById('js-black-bg');
+   var closeBtn = document.getElementById('js-close-btn');
+
+   closePopUp(blackBg);
+   closePopUp(closeBtn);
+
+   function closePopUp(elem) {
+     if(!elem) return;
+     elem.addEventListener('click', function() {
+       popup.classList.remove('is-show');
+     })
+   }
+ }</script>
     
 </body>
 </html>

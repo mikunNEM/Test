@@ -67,15 +67,17 @@
   
   <script>
   window.onload = function() {
-   var popup = document.getElementById('#js-popup');
+   var popup = document.getElementById('js-popup');
+    console.log("popup1=")////
+    console.log(popup); ////
     
    if(!popup) return;
     popup.classList.add('is-show');
-    console.log("popup=")////
+    console.log("popup2=")////
     console.log(popup); ////
     
-   var blackBg = document.getElementById('#js-black-bg');
-   var closeBtn = document.getElementById('#js-close-btn');
+   var blackBg = document.getElementById('js-black-bg');
+   var closeBtn = document.getElementById('js-close-btn');
     
    closePopUp(blackBg);
    closePopUp(closeBtn);
@@ -84,7 +86,7 @@
      if(!elem) return;
      elem.addEventListener('click', function() {
        console.log("関数closePopUpの中だよ");
-       console.log("popup=")////
+       console.log("popup3=")////
        console.log(popup); ////
        
        popup.classList.remove('is-show');

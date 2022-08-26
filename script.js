@@ -271,7 +271,7 @@ function handleSSS() {
 window.onload = function() {
    var popup = document.getElementById('js-popup');
     
-   if(!popup || promise) return;   //  画面をクリックしてる時　戻る
+   if(!popup || promise) return;   //  画面をクリックしてる時(promise = true)　戻る
     popup.classList.add('is-show');
     
    var blackBg = document.getElementById('js-black-bg');

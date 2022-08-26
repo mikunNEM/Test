@@ -71,6 +71,8 @@
     
    if(!popup) return;
    popup.classList.add('is-show');
+    console.log("popup=")////
+    console.log(popup); ////
     
    var blackBg = document.getElementById('js-black-bg');
    var closeBtn = document.getElementById('js-close-btn');
@@ -83,6 +85,8 @@
      elem.addEventListener('click', function() {
        console.log("関数closePopUpの中だよ");
        popup.classList.remove('is-show');
+       console.log("popup=")////
+       console.log(popup); ////
        
      })
    }

@@ -64,9 +64,7 @@ accountHttp.getAccountInfo(address)
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
       if (tx.mosaics[0].id.id.lower === 2316569883) { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
-         console.log("promise=");
-         console.log(promise);
-         //window.setTimeout(function(){location.reload();},2000); // 2秒後にページをリロード
+         window.setTimeout(function(){location.reload();},2000); // 2秒後にページをリロード
       }
        
     });
@@ -273,7 +271,7 @@ function handleSSS() {
 window.onload = function() {
    var popup = document.getElementById('js-popup');
     
-   if(!popup) return;
+   if(!popup || promise) return;   //  画面をクリックしてる時　戻る
     popup.classList.add('is-show');
     
    var blackBg = document.getElementById('js-black-bg');

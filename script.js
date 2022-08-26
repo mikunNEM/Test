@@ -273,7 +273,7 @@ window.onload = function() {
     
    if(!popup) return;
     
-    if(!promise) {   //  画面を一度もクリックしてない時ポップアップさせる(promise = undefined)　
+    if(!promise.catch()) {   //  画面を一度もクリックしてない時ポップアップさせる(promise = undefined)　
       popup.classList.add('is-show');
     }
   

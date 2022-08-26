@@ -267,7 +267,6 @@ function handleSSS() {
   })
 }
 
-if(!promise) {   //  画面を一度もクリックしてない時ポップアップさせる(promise = undefined)　
    // ポップアップ 表示
 window.onload = function() {
    var popup = document.getElementById('js-popup');
@@ -289,4 +288,4 @@ window.onload = function() {
      })
    }
  }
-}
+

@@ -149,19 +149,19 @@ transactionHttp
      
       switch(tx.mosaics[0].id.id.lower){
         case 2316569883:
-          Tomato_Type = '📖';
+          const Tomato_Type = '📖';
           break;
         case 2316569883:
-          Tomato_Type = '🦷';
+          const Tomato_Type = '🦷';
           break;
         case 2316569883:
-          Tomato_Type = '🎮';
+          const Tomato_Type = '🎮';
           break;
         case 2316569883:
-          Tomato_Type = '🦁';
+          const Tomato_Type = '🦁';
           break;
         case 2316569883:
-          Tomato_Type = '🖥';
+          const Tomato_Type = '🖥';
           break;
         default:
   　　　　　console.log('不明なトマトタイプです');  

@@ -160,7 +160,7 @@ transactionHttp
         }
         break;
       
-      case 2316569883: //🦷   
+      case 2601104190: //🦷   
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦷🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
@@ -168,21 +168,21 @@ transactionHttp
         }
         break;
       
-      case 2316569883:  //🎮
+      case 1520040868:  //🎮
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🎮🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🎮🍅 ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
       
-      case 2316569883: //🦁  
+      case 3240052016: //🦁  
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦁🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🦁🍅 ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
       
-      case 2316569883: //🖥
+      case 1174277947: //🖥
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🖥🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 

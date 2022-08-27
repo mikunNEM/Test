@@ -22,7 +22,7 @@ accountHttp.getAccountInfo(address)
   .toPromise()
   .then((accountInfo) => {
     for (let m of accountInfo.mosaics) {
-      if (m.id.id.toHex() === MOSAIC_ID) {
+      if (m.id.id.toHex() === '310378C18A140D1B') {
         const dom_xym = document.getElementById('xembook-tomato');
         dom_xym.innerText = `📖🍅 : ${m.amount.compact()}`;    // Tomato Balance
       }
@@ -257,6 +257,7 @@ function getTransactionType (type) { // https://symbol.github.io/symbol-sdk-type
 
 function handleSSS() {
   console.log('handle sss');
+  const MOSAIC_ID = document.getElementById('form-addr').value;
   const addr = document.getElementById('form-addr').value;
   const amount = document.getElementById('form-amount').value;
   const message = document.getElementById('form-message').value;

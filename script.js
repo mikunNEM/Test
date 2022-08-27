@@ -46,6 +46,12 @@ accountHttp.getAccountInfo(address)
       }
     }
     for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '581B528745FE0F3B') {
+        const dom_xym = document.getElementById('pasomi-tomato');
+        dom_xym.innerText = `pasomi🖥🍅 : ${m.amount.compact()}`;       // toshi.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {
         const dom_xym = document.getElementById('xym-balance');
         dom_xym.innerText = `XYM : ${m.amount.compact()/1000000}`;       // XYM Balance
@@ -80,7 +86,7 @@ accountHttp.getAccountInfo(address)
          // 承認音を鳴らす
         var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding2.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
-      if (tx.mosaics[0].id.id.lower === 2316569883) { // tomataoモザイクの時鳴らす
+      if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947) { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
          window.setTimeout(function(){location.reload(false);},2000); // 2秒後にキャッシュを利用してページをリロード
       }
@@ -96,7 +102,7 @@ accountHttp.getAccountInfo(address)
         var my_audio = new Audio("https://github.com/mikunNEM/SSS_tomato/blob/main/tomatina.ogg?raw=true");  // トマティーナ
         //var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
-      if (tx.mosaics[0].id.id.lower === 2316569883) { // tomatoモザイクの時鳴らす
+      if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947) { // tomatoモザイクの時鳴らす
         my_audio.play();  //サウンドを再生  
       }  
     });   
@@ -152,7 +158,7 @@ transactionHttp
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
       
     
-    　// if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 ||  || 3240052016) { //tomatoモザイクの時だけ表示する
+    　if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加
@@ -161,7 +167,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
-   　 //  }
+   　   }
       }
     }
   })

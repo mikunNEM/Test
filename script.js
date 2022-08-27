@@ -30,25 +30,25 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '5A8F12439B09B33E') {
         const dom_xym = document.getElementById('shizui-tomato');
-        dom_xym.innerText = `🦷🍅__shizui : ${m.amount.compact()}`;       // shizui.tomato
+        dom_xym.innerText = `🦷🍅____shizui : ${m.amount.compact()}`;       // shizui.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '717C14465A99FBA4') {
         const dom_xym = document.getElementById('tenxym-tomato');
-        dom_xym.innerText = `🎮🍅__tenxym : ${m.amount.compact()}`;       // tenxym.tomato
+        dom_xym.innerText = `🎮🍅___tenxym : ${m.amount.compact()}`;       // tenxym.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '613E6D0FC11F4530') {
         const dom_xym = document.getElementById('toshi-tomato');
-        dom_xym.innerText = `🦁🍅___toshi : ${m.amount.compact()}`;       // toshi.tomato
+        dom_xym.innerText = `🦁🍅_____toshi : ${m.amount.compact()}`;       // toshi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '581B528745FE0F3B') {
         const dom_xym = document.getElementById('pasomi-tomato');
-        dom_xym.innerText = `🖥🍅__pasomi : ${m.amount.compact()}`;       // toshi.tomato
+        dom_xym.innerText = `🖥🍅___pasomi : ${m.amount.compact()}`;       // toshi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {

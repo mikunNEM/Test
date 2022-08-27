@@ -30,7 +30,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '5A8F12439B09B33E') {
         const dom_xym = document.getElementById('shizui-tomato');
-        dom_xym.innerText = `🦷🍅____shizui : ${m.amount.compact()}`;       // shizui.tomato
+        dom_xym.innerText = `🦷🍅_____shizui : ${m.amount.compact()}`;       // shizui.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
@@ -42,7 +42,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '613E6D0FC11F4530') {
         const dom_xym = document.getElementById('toshi-tomato');
-        dom_xym.innerText = `🦁🍅_____toshi : ${m.amount.compact()}`;       // toshi.tomato
+        dom_xym.innerText = `🦁🍅______toshi : ${m.amount.compact()}`;       // toshi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {

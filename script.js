@@ -2,7 +2,7 @@ const symbol = require('/node_modules/symbol-sdk');
 
 const GENERATION_HASH = '57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6';
 const EPOCH = 1615853185;
-const MOSAIC_ID = '310378C18A140D1B';
+//const MOSAIC_ID = '310378C18A140D1B';
 const NODE_URL = 'https://symbol-mikun.net:3001';
 const NET_TYPE = symbol.NetworkType.MAIN_NET;
 
@@ -253,11 +253,17 @@ function getTransactionType (type) { // https://symbol.github.io/symbol-sdk-type
   }
 }
 
+
+function clickBtn4(){
+	const MOSAIC_ID = document.getElementById("tomato4").value;
+	document.getElementById("span4").textContent = MOSAIC_ID;
+}
+
 // handleSSS関数はトランザクションを作成し、window.SSS.setTransaction関数を実行しSSSにトランザクションを登録します。そしてwindow.SSS.requestSign関数を実行し、SSSを用いた署名をユーザ－に要求します。
 
 function handleSSS() {
   console.log('handle sss');
-  const MOSAIC_ID = document.getElementById('form-addr').value;
+  //const MOSAIC_ID = document.getElementById('form-Mosaic').value;
   const addr = document.getElementById('form-addr').value;
   const amount = document.getElementById('form-amount').value;
   const message = document.getElementById('form-message').value;

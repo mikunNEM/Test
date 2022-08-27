@@ -146,14 +146,36 @@ transactionHttp
       dom_hash.innerHTML = `Tx Hash : <a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank" rel="noopener noreferrer"><small>${tx.transactionInfo.hash}</small></a>`;
       dom_signer_address.innerText = `From : ${tx.signer.address.address}`;    //  文字列の結合　送信者
       
+     
+      switch(tx.mosaics[0].id.id.lower){
+        case 2316569883;
+          Tomato_Type = '📖';
+          break;
+        case 2316569883;
+          Tomato_Type = '🦷';
+          break;
+        case 2316569883;
+          Tomato_Type = '🎮';
+          break;
+        case 2316569883;
+          Tomato_Type = '🦁';
+          break;
+        case 2316569883;
+          Tomato_Type = '🖥';
+          break;
+        default:
+  　　　　　console.log('不明なトマトタイプです');  
+      }
+    
+      
     if (tx.type === 16724) {  // Transfer の時だけ実行する
       
       dom_recipient_address.innerText = `To   : ${tx.recipientAddress.address}`;//  文字列の結合　宛先
      
       if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-         dom_amount.innerHTML = `<font color="#FF0000">🥳➡️🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+         dom_amount.innerHTML = `<font color="#FF0000">🥳➡️${Tomato_Type}🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
       }else { 
-         dom_amount.innerHTML = `<font color="#008000">🍅➡️😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
+         dom_amount.innerHTML = `<font color="#008000">${Tomato_Type}🍅➡️😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
       }
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
       

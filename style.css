@@ -70,9 +70,27 @@ h2 {
   font-size: 24px;                 // ウォレットアドレスの文字サイズ
 }
 
-#wallet-tomato {
+#xembook-tomato {
   text-align: right;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#shizui-tomato {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#tenxym-tomato {
+  text-align: right;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#toshi-tomato {
+  text-align: right;
+  font-size: 30px;
   font-weight: 700;
 }
 

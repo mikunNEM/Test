@@ -23,8 +23,26 @@ accountHttp.getAccountInfo(address)
   .then((accountInfo) => {
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === MOSAIC_ID) {
-        const dom_xym = document.getElementById('wallet-tomato');
-        dom_xym.innerText = `🍅🍅🍅 : ${m.amount.compact()}`;    // Tomato Balance
+        const dom_xym = document.getElementById('xembook-tomato');
+        dom_xym.innerText = `📖🍅 : ${m.amount.compact()}`;    // Tomato Balance
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '5A8F12439B09B33E') {
+        const dom_xym = document.getElementById('shizui-tomato');
+        dom_xym.innerText = `🦷🍅 : ${m.amount.compact()}`;       // shizui.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '717C14465A99FBA4') {
+        const dom_xym = document.getElementById('tenxym-tomato');
+        dom_xym.innerText = `🎮🍅 : ${m.amount.compact()}`;       // tenxym.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '613E6D0FC11F4530') {
+        const dom_xym = document.getElementById('toshi-tomato');
+        dom_xym.innerText = `🦁🍅 : ${m.amount.compact()}`;       // toshi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {

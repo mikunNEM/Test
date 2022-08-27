@@ -152,7 +152,7 @@ transactionHttp
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
       
     
-    　// if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 ||  ||) { //tomatoモザイクの時だけ表示する
+    　// if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 ||  || 3240052016) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加

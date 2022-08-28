@@ -208,8 +208,9 @@ transactionHttp
       
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
       
+       const M_lower = tx.mosaics[0].id.id.lower;
     
-       if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947 || 3160806695) { //tomatoモザイクの時だけ表示する
+       if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加

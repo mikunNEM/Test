@@ -3,6 +3,12 @@ body {
   background-image:url("https://github.com/mikunNEM/SSS_tomato/blob/main/tomato.png?raw=true");
 }
 
+SSS_link {
+        color:rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: right;
+}
+
 h1 {
   color:rgb(255, 255, 0);
   font-size: 96px;

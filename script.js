@@ -60,7 +60,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '725A2499CC6614D9') {
         const dom_xym = document.getElementById('ulty-tomato');
-        dom_xym.innerText = `𓃗🍅 : ${m.amount.compact()} / ulty`;       // ulty.tomato
+        dom_xym.innerText = `🏇🍅 : ${m.amount.compact()} / ulty`;       // ulty.tomato
       }
     } 
     for (let m of accountInfo.mosaics) {
@@ -216,9 +216,9 @@ transactionHttp
         break;
       case 3429242073: //𓃗
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 𓃗🍅ulty : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🏇🍅ulty : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">𓃗🍅ulty ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🏇🍅ulty ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;   
          

@@ -174,20 +174,23 @@ transactionHttp
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🎮🍅 ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
-      
+        break;
       case 3240052016: //🦁  
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦁🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🦁🍅 ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
-      
+        break;
       case 1174277947: //🖥
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🖥🍅 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🖥🍅 ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
-        }     
+        } 
+        default:
+        console.log("不明なトマトモザイクです"); 
+        break;  
      }
       
       

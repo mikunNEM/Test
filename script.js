@@ -213,7 +213,7 @@ transactionHttp
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
    　//   }
-    //  }
+      }
     }
   })
 }, 3000)

@@ -92,7 +92,10 @@ accountHttp.getAccountInfo(address)
          // 承認音を鳴らす
         var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding2.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
-      if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947 || 3160806695) { // tomataoモザイクの時鳴らす
+      
+      const M_lower = tx.mosaics[0].id.id.lower;
+    
+      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
          window.setTimeout(function(){location.reload(false);},2000); // 2秒後にキャッシュを利用してページをリロード
       }
@@ -108,7 +111,10 @@ accountHttp.getAccountInfo(address)
         var my_audio = new Audio("https://github.com/mikunNEM/SSS_tomato/blob/main/tomatina.ogg?raw=true");  // トマティーナ
         //var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
-      if (tx.mosaics[0].id.id.lower === 2316569883 || 2601104190 || 1520040868 || 3240052016 || 1174277947 || 3160806695) { // tomatoモザイクの時鳴らす
+      
+      const M_lower = tx.mosaics[0].id.id.lower;
+    
+      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { // tomatoモザイクの時鳴らす
         my_audio.play();  //サウンドを再生  
       }  
     });   

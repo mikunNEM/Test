@@ -52,6 +52,12 @@ accountHttp.getAccountInfo(address)
       }
     }
     for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '22EB02FCBC661527') {
+        const dom_xym = document.getElementById('nononon-tomato');
+        dom_xym.innerText = `🐰🍅 : ${m.amount.compact()}`;       // toshi.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {
         const dom_xym = document.getElementById('xym-balance');
         dom_xym.innerText = `XYM : ${m.amount.compact()/1000000}`;       // XYM Balance

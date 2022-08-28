@@ -62,8 +62,7 @@ accountHttp.getAccountInfo(address)
         const dom_xym = document.getElementById('ulty-tomato');
         dom_xym.innerText = `𓃗🍅 : ${m.amount.compact()}`;       // ulty.tomato
       }
-    }
-  
+    } 
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {
         const dom_xym = document.getElementById('xym-balance');
@@ -102,9 +101,9 @@ accountHttp.getAccountInfo(address)
       
       const M_lower = tx.mosaics[0].id.id.lower;
     
-      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { // tomataoモザイクの時鳴らす
+      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073) { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
-         window.setTimeout(function(){location.reload(false);},2000); // 2秒後にキャッシュを利用してページをリロード
+         window.setTimeout(function(){location.reload();},2000); // 2秒後にキャッシュを利用してページをリロード
       }
        
     });
@@ -121,7 +120,7 @@ accountHttp.getAccountInfo(address)
       
       const M_lower = tx.mosaics[0].id.id.lower;
     
-      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { // tomatoモザイクの時鳴らす
+      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073) { // tomatoモザイクの時鳴らす
         my_audio.play();  //サウンドを再生  
       }  
     });   
@@ -214,7 +213,15 @@ transactionHttp
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🐰🍅nononon ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
-        break; 
+        break;
+      case 3429242073: //𓃗
+        if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 𓃗🍅ulty : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }else { 
+           dom_amount.innerHTML = `<font color="#008000">𓃗🍅ulty ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }
+        break;   
+         
         default:
         console.log("不明なトマトモザイクです"); 
         break;  
@@ -225,7 +232,7 @@ transactionHttp
       
        const M_lower = tx.mosaics[0].id.id.lower;
     
-      // if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695) { //tomatoモザイクの時だけ表示する
+       if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加
@@ -234,7 +241,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
-   　//   }
+   　  }
       }
     }
   })

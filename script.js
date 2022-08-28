@@ -200,6 +200,7 @@ transactionHttp
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🖥🍅pasomi ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
+        break;
       case 3160806695: //🐰
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐰🍅nononon : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量

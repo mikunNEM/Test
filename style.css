@@ -69,11 +69,11 @@ h2 {
 }
 
 .textfiled {
-  width: 400px;                    // 左の白い背景の大きさ
+  width: 400px;                   // 左の白い背景の大きさ
 }
 
 #wallet-addr {
-  font-size: 24px;                 // ウォレットアドレスの文字サイズ
+  font-size: 24px;                // ウォレットアドレスの文字サイズ
 }
 
 #xembook-tomato {
@@ -214,4 +214,3 @@ h2 {
   z-index: 1;
   cursor: pointer;
 }
-

@@ -91,19 +91,19 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '23A72A2876482029') {
         const dom_xym = document.getElementById('wecanch-tomato');
-        dom_xym.innerText = `<a href=“https://twitter.com/wecanch” target="_blank" rel="noopener noreferrer”>👩‍🚀🍅 : ${m.amount.compact()} / webcanch</a>`;       // wecanch.tomato
+        dom_xym.innerText = `👩‍🚀🍅 : ${m.amount.compact()} / webcanch`;       // wecanch.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '5FF7741F1AE008DE') {
         const dom_xym = document.getElementById('kotopapa-tomato');
-        dom_xym.innerText = `<a href=“https://twitter.com/kotopapa8” target="_blank" rel="noopener noreferrer”>👦🍅 : ${m.amount.compact()} / kotopapa</a>`;       // kotopapa.tomato
+        dom_xym.innerText = `👦🍅 : ${m.amount.compact()} / kotopapa`;       // kotopapa.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '220DE9C58B8E0E71') {
         const dom_xym = document.getElementById('u2yasan-tomato');
-        dom_xym.innerText = `<a href=“https://twitter.com/u2yasan” target="_blank" rel="noopener noreferrer”>🥚🍅 : ${m.amount.compact()} / u2yasan</a>`;       // u2yasan.tomato
+        dom_xym.innerText = `🥚🍅 : ${m.amount.compact()} / u2yasan`;       // u2yasan.tomato
       }
     } 
     for (let m of accountInfo.mosaics) {

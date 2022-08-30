@@ -182,7 +182,7 @@ h2 {
   top: 50%;
   transform: translate(-50%,-50%);
   width: 80%;
-  max-width: 200px;
+  max-width: 300px;
   padding: 50px;
   background-color: #fff;
   z-index: 2;

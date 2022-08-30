@@ -24,86 +24,86 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '310378C18A140D1B') {
         const dom_xym = document.getElementById('xembook-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/xembook” target="_blank" rel="noopener noreferrer”>📖🍅 : ${m.amount.compact()} / xembook</a>`;    // xembook.tomato
+        dom_xym.innerText = `📖🍅 : ${m.amount.compact()} / xembook`;    // xembook.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '5A8F12439B09B33E') {
         const dom_xym = document.getElementById('shizui-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/habingofit” target="_blank" rel="noopener noreferrer”>🦷🍅 : ${m.amount.compact()} / shizui</a>`;       // shizui.tomato
+        dom_xym.innerText = `🦷🍅 : ${m.amount.compact()} / shizui`;       // shizui.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '717C14465A99FBA4') {
         const dom_xym = document.getElementById('tenxym-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/subarumanSP” target="_blank" rel="noopener noreferrer”>🎮🍅 : ${m.amount.compact()} / tenxym</a>`;       // tenxym.tomato
+        dom_xym.innerText = `🎮🍅 : ${m.amount.compact()} / tenxym`;       // tenxym.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '613E6D0FC11F4530') {
         const dom_xym = document.getElementById('toshi-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/toshiya_ma” target="_blank" rel="noopener noreferrer”>🦁🍅 : ${m.amount.compact()} / toshi</a>`;       // toshi.tomato
+        dom_xym.innerText = `🦁🍅 : ${m.amount.compact()} / toshi`;       // toshi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '581B528745FE0F3B') {
         const dom_xym = document.getElementById('pasomi-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/pasomi_3” target="_blank" rel="noopener noreferrer”>🖥🍅 : ${m.amount.compact()} / pasomi</a>`;       // pasomi.tomato
+        dom_xym.innerText = `🖥🍅 : ${m.amount.compact()} / pasomi`;       // pasomi.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '22EB02FCBC661527') {
         const dom_xym = document.getElementById('nononon-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/_nononon__” target="_blank" rel="noopener noreferrer”>🐰🍅 : ${m.amount.compact()} / nononon</a>`;       // nononon.tomato
+        dom_xym.innerText = `🐰🍅 : ${m.amount.compact()} / nononon`;       // nononon.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '725A2499CC6614D9') {
         const dom_xym = document.getElementById('ulty-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/ulty_investor” target="_blank" rel="noopener noreferrer”>🏇🍅 : ${m.amount.compact()} / ulty</a>`;       // ulty.tomato
+        dom_xym.innerText = `🏇🍅 : ${m.amount.compact()} / ulty`;       // ulty.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '509A58B6FDFFC197') {
         const dom_xym = document.getElementById('hanabatake-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/HANABATA_KE” target="_blank" rel="noopener noreferrer”>🌻🍅 : ${m.amount.compact()} / hanabatake</a>`;       // hanabatake.tomato
+        dom_xym.innerText = `🌻🍅 : ${m.amount.compact()} / hanabatake`;       // hanabatake.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '0B7766A119D5E4B5') {
         const dom_xym = document.getElementById('cat-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/Cat007_Symbol” target="_blank" rel="noopener noreferrer”>🐱🍅 : ${m.amount.compact()} / cat</a>`;       // cat.tomato
+        dom_xym.innerText = `🐱🍅 : ${m.amount.compact()} / cat`;       // cat.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '54ACEAF1E8632DF1') {
         const dom_xym = document.getElementById('temple01-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/temple0101010” target="_blank" rel="noopener noreferrer”>👀🍅 : ${m.amount.compact()} / temple01</a>`;       // temple01.tomato
+        dom_xym.innerText = `👀🍅 : ${m.amount.compact()} / temple01`;       // temple01.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '0C1058BB20787615') {
         const dom_xym = document.getElementById('radio-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/RadioRa26841511” target="_blank" rel="noopener noreferrer”>📻🍅 : ${m.amount.compact()} / radio</a>`;       // temple01.tomato
+        dom_xym.innerText = `📻🍅 : ${m.amount.compact()} / radio`;       // temple01.tomato
       }
     }
     
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '23A72A2876482029') {
         const dom_xym = document.getElementById('wecanch-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/wecanch” target="_blank" rel="noopener noreferrer”>👩‍🚀🍅 : ${m.amount.compact()} / webcanch</a>`;       // wecanch.tomato
+        dom_xym.innerText = `<a href=“https://twitter.com/wecanch” target="_blank" rel="noopener noreferrer”>👩‍🚀🍅 : ${m.amount.compact()} / webcanch</a>`;       // wecanch.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '5FF7741F1AE008DE') {
         const dom_xym = document.getElementById('kotopapa-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/kotopapa8” target="_blank" rel="noopener noreferrer”>👦🍅 : ${m.amount.compact()} / kotopapa</a>`;       // kotopapa.tomato
+        dom_xym.innerText = `<a href=“https://twitter.com/kotopapa8” target="_blank" rel="noopener noreferrer”>👦🍅 : ${m.amount.compact()} / kotopapa</a>`;       // kotopapa.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '220DE9C58B8E0E71') {
         const dom_xym = document.getElementById('u2yasan-tomato');
-        dom_xym.innerHTML = `<a href=“https://twitter.com/u2yasan” target="_blank" rel="noopener noreferrer”>🥚🍅 : ${m.amount.compact()} / u2yasan</a>`;       // u2yasan.tomato
+        dom_xym.innerText = `<a href=“https://twitter.com/u2yasan” target="_blank" rel="noopener noreferrer”>🥚🍅 : ${m.amount.compact()} / u2yasan</a>`;       // u2yasan.tomato
       }
     } 
     for (let m of accountInfo.mosaics) {
@@ -322,7 +322,7 @@ transactionHttp
       
        const M_lower = tx.mosaics[0].id.id.lower;
     
-       if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833) { //tomatoモザイクの時だけ表示する
+     //  if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加
@@ -331,7 +331,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
-   　  } 
+  // 　  } 
       }
     }
   })

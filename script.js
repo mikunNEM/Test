@@ -325,9 +325,9 @@ transactionHttp
         break;       
       case 3486533395: //🐐
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐐🍅mtn.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐐🍅mtn.tomato : ${tx.mosaics[0].amount.lower}/1000000</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">🐐🍅mtn.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🐐🍅mtn.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}/1000000</font>`;     // 　数量
         }
         break;
          

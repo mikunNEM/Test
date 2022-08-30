@@ -105,6 +105,12 @@ accountHttp.getAccountInfo(address)
         const dom_xym = document.getElementById('u2yasan-tomato');
         dom_xym.innerText = `🥚🍅 : ${m.amount.compact()} / u2yasan`;       // u2yasan.tomato
       }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '220DE9C58B8E0E71') {
+        const dom_xym = document.getElementById('u2yasan-tomato');
+        dom_xym.innerText = `🥚🍅 : ${m.amount.compact()} / u2yasan`;       // u2yasan.tomato
+      }
     } 
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {

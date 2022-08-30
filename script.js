@@ -107,15 +107,9 @@ accountHttp.getAccountInfo(address)
       }
     }
     for (let m of accountInfo.mosaics) {
-      if (m.id.id.toHex() === '220DE9C58B8E0E71') {
-        const dom_xym = document.getElementById('u2yasan-tomato');
-        dom_xym.innerText = `🥚🍅 : ${m.amount.compact()} / u2yasan`;       // u2yasan.tomato
-      }
-    }
-    for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '3F0B0C29CFD04713') {
         const dom_xym = document.getElementById('mtn-tomato');
-        dom_xym.innerText = `🐐🍅 : ${m.amount.compact()} / mtn`;       // mtn.tomato
+        dom_xym.innerText = `🐐🍅 : ${Math.trunc(m.amount.compact()/1000000)} / mtn`;       // mtn.tomato 　 整数の部分だけ表示する
       }
     } 
     for (let m of accountInfo.mosaics) {
@@ -325,9 +319,9 @@ transactionHttp
         break;       
       case 3486533395: //🐐
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐐🍅mtn.tomato : ${tx.mosaics[0].amount.lower}/1000000</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐐🍅mtn.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/1000000)}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">🐐🍅mtn.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}/1000000</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🐐🍅mtn.tomato ➡️ 😳 : ${Math.trunc(tx.mosaics[0].amount.lower/1000000)}</font>`;     // 　数量
         }
         break;
          

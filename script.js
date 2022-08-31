@@ -169,13 +169,13 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6A44EB5C0F8ED639') {
         const dom_xym = document.getElementById('klim-tomato');
-        dom_xym.innerText = `🙋‍♂️🍅 : ${m.amount.compact()} / klim`;       // klim.tomato
+        dom_xym.innerText = `🙋‍♂️🍅 : ${Math.trunc(m.amount.compact()/10)} / klim`;       // klim.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '7ADA0B238BB2E29D') {
         const dom_xym = document.getElementById('angelxym-tomato');
-        dom_xym.innerText = `👼🍅 : ${m.amount.compact()} / angelxym`;       // angelxym.tomato
+        dom_xym.innerText = `👼🍅 : ${Math.trunc(m.amount.compact()/10)} / angelxym`;       // angelxym.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
@@ -467,16 +467,16 @@ transactionHttp
         break; 
       case 261019193: //🙋‍♂️
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🙋‍♂️🍅klim.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🙋‍♂️🍅klim.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">🙋‍♂️🍅klim.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🙋‍♂️🍅klim.tomato ➡️ 😳 : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }
         break;
       case 2343756445: //👼
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👼🍅angelxym.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👼🍅angelxym.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">👼🍅angelxym.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">👼🍅angelxym.tomato ➡️ 😳 : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }
         break;    
       case 0000000000: //👨‍🎤

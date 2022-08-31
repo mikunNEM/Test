@@ -184,9 +184,6 @@ accountHttp.getAccountInfo(address)
         dom_xym.innerText = `👨‍🎤🍅 : ${m.amount.compact()} / karriz`;       // karriz.tomato
       }
     }
-  
-  
-  /////
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {
         const dom_xym = document.getElementById('xym-balance');

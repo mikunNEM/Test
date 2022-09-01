@@ -283,11 +283,13 @@ transactionHttp
       dom_txType.innerText = `Tx Type : ${getTransactionType(tx.type)}`;        //　文字列の結合 　Tx タイプ
       //dom_hash.innerText = `Tx Hash : ${tx.transactionInfo.hash}`;              //  文字列の結合　 Tx ハッシュ
       dom_hash.innerHTML = `Tx Hash : <a href="https://symbol.fyi/transactions/${tx.transactionInfo.hash}" target="_blank" rel="noopener noreferrer"><small>${tx.transactionInfo.hash}</small></a>`;
-      dom_signer_address.innerText = `From : ${tx.signer.address.address}`;    //  文字列の結合　送信者
-      
+      dom_signer_address.innerText = `From : ${tx.signer.address.address}`;    //  文字列の結合　送信者 
       
     if (tx.type === 16724) {  // Transfer の時だけ実行する
       dom_recipient_address.innerText = `To   : ${tx.recipientAddress.address}`;//  文字列の結合　宛先
+      
+      console.log("toHex MOSAIC ID =");   //////////////////////////////////////
+      console.log(tx.mosaics[0].id.toHex());  //////////////////////////////////
       
      switch(tx.mosaics[0].id.id.lower){      
       case 2316569883: //📖

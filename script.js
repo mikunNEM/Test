@@ -291,106 +291,106 @@ transactionHttp
       console.log("toHex MOSAIC ID =");   //////////////////////////////////////
       console.log(tx.mosaics[0].id.toHex());  //////////////////////////////////
       
-     switch(tx.mosaics[0].id.id.lower){      
-      case 2316569883: //📖
+     switch(tx.mosaics[0].id.toHex()){      
+      case 310378C18A140D1B: //📖
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 📖🍅xembook.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">📖🍅xembook.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
         break;     
-      case 2601104190: //🦷   
+      case 5A8F12439B09B33E: //🦷   
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦷🍅shizui.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🦷🍅shizui.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
         break;      
-      case 1520040868:  //🎮
+      case 717C14465A99FBA4:  //🎮
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🎮🍅tenxym.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🎮🍅tenxym.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
         break;        
-      case 3240052016: //🦁  
+      case 613E6D0FC11F4530: //🦁  
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦁🍅toshi.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🦁🍅toshi.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
         break;         
-      case 1174277947: //🖥
+      case 581B528745FE0F3B: //🖥
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🖥🍅pasomi.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🖥🍅pasomi.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量 
         }
         break;        
-      case 3160806695: //🐰
+      case 22EB02FCBC661527: //🐰
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐰🍅nononon.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🐰🍅nononon.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;        
-      case 3429242073: //🏇
+      case 725A2499CC6614D9: //🏇
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🏇🍅ulty.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🏇🍅ulty.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;        
-      case 4261396887: //🌻
+      case 509A58B6FDFFC197: //🌻
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🌻🍅hanabatake.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🌻🍅hanabatake.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;         
-      case 433448117: //🐱
+      case 0B7766A119D5E4B5: //🐱
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐱🍅cat.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🐱🍅cat.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;        
-      case 3898813937: //👀
+      case 54ACEAF1E8632DF1: //👀
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👀🍅temple01.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">👀🍅temple01.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;         
-      case 544765461: //📻
+      case 0C1058BB20787615: //📻
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 📻🍅radio.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">📻🍅radio.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;         
-      case 1984438313: //👩‍🚀
+      case 23A72A2876482029: //👩‍🚀
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👩‍🚀🍅wecanch.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">👩‍🚀🍅wecanch.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;        
-      case 450889950: //👦
+      case 5FF7741F1AE008DE: //👦
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👦🍅kotopapa.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">👦🍅kotopapa.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;         
-      case 2341342833: //🥚
+      case 220DE9C58B8E0E71: //🥚
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🥚🍅u2yasan.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🥚🍅u2yasan.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;       
-      case 3486533395: //🐐
+      case 3F0B0C29CFD04713: //🐐
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐐🍅mtn.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/1000000)}</font>`;     // 　数量
         }else { 
@@ -398,35 +398,35 @@ transactionHttp
         }
         break;
     ////
-      case 2251310278: //🦉
+      case 4F2DC8BA863044C6: //🦉
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦉🍅fukurou.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🦉🍅fukurou.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;        
-      case 3243553504: //🐤
+      case 7B9DC57CC154B2E0: //🐤
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐤🍅hirosansymbol.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🐤🍅hirosansymbol.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;
-      case 886133073: //🎩
+      case 14ABF8C934D15151: //🎩
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🎩🍅cryptobeliever.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🎩🍅cryptobeliever.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;
-      case 1451035188: //🐈
+      case 3898DDE9567D0A34: //🐈
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐈🍅anthony14w.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🐈🍅anthony14w.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;
-      case 4271279660: //👧
+      case 5D9D5C6BFE968E2C: //👧
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👧🍅sheva.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
@@ -435,49 +435,49 @@ transactionHttp
         break;
       ////////////////////////////////////////////////
          
-      case 2383953658: //🏃‍♀️
+      case 05E545728E183EFA: //🏃‍♀️
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🏃‍♀️🍅drugn.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🏃‍♀️🍅drugn.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break; 
-      case 3980290267: //🧸
+      case 6BE5318AED3E68DB: //🧸
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🧸🍅exym.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🧸🍅exym.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;    
-      case 0000000000: //🪓
+      case 7542C49F2737C4DE: //🪓
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🪓🍅hatchet.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🪓🍅hatchet.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;    
-      case 0000000000: //❔
+      case 078FA8E61BB9BE9C: //❔
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ ❔🍅jammin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">❔🍅jammin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break; 
-      case 261019193: //🙋‍♂️
+      case 6A44EB5C0F8ED639: //🙋‍♂️
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🙋‍♂️🍅klim.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">🙋‍♂️🍅klim.tomato ➡️ 😳 : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }
         break;
-      case 2343756445: //👼
+      case 7ADA0B238BB2E29D: //👼
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👼🍅angelxym.tomato : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }else { 
            dom_amount.innerHTML = `<font color="#008000">👼🍅angelxym.tomato ➡️ 😳 : ${Math.trunc(tx.mosaics[0].amount.lower/10)}</font>`;     // 　数量
         }
         break;    
-      case 1706038924: //👨‍🎤
+      case 7F1B538B65B0168C: //👨‍🎤
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 👨‍🎤🍅karriz.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 

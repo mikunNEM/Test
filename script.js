@@ -287,11 +287,6 @@ transactionHttp
       
       
     if (tx.type === 16724) {  // Transfer の時だけ実行する
-       
-        console.log("MosaicId.toHex()=");  //////////////////////////////
-        console.log(MosaicId.toHex(tx.mosaics[0].id.id));/////////////////
-      
-      
       dom_recipient_address.innerText = `To   : ${tx.recipientAddress.address}`;//  文字列の結合　宛先
       
      switch(tx.mosaics[0].id.id.lower){      

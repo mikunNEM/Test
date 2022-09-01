@@ -288,8 +288,8 @@ transactionHttp
       
     if (tx.type === 16724) {  // Transfer の時だけ実行する
        
-        consolo.log("MosaicId.toHex()=");
-        console.log(MosaicId.toHex(tx.mosaics[0].id.id));
+        console.log("MosaicId.toHex()=");  //////////////////////////////
+        console.log(MosaicId.toHex(tx.mosaics[0].id.id));/////////////////
       
       
       dom_recipient_address.innerText = `To   : ${tx.recipientAddress.address}`;//  文字列の結合　宛先

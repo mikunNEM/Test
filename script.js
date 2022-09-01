@@ -496,7 +496,7 @@ transactionHttp
       
        const M_lower = tx.mosaics[0].id.id.lower;
     
-       if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833 || M_lower === 3486533395 || M_lower === 2251310278 || M_lower === 3243553504 || M_lower === 886133073 || M_lower === 1451035188 || M_lower === 4271279660 || M_lower === 2383953658 || M_lower === 3980290267 || M_lower === "hatchet" || M_lower === "jammin" || M_lower === 261019193 || M_lower === 2343756445 || M_lower === 1706038924) { //tomatoモザイクの時だけ表示する
+  //     if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833 || M_lower === 3486533395 || M_lower === 2251310278 || M_lower === 3243553504 || M_lower === 886133073 || M_lower === 1451035188 || M_lower === 4271279660 || M_lower === 2383953658 || M_lower === 3980290267 || M_lower === "hatchet" || M_lower === "jammin" || M_lower === 261019193 || M_lower === 2343756445 || M_lower === 1706038924) { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加
@@ -505,7 +505,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
-   　  } 
+  // 　  } 
       }
     }
   })

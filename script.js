@@ -205,7 +205,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '7A848BE35EA4C849') {
         const dom_xym = document.getElementById('shin-tomato');
-        dom_xym.innerText = `☀️🍅 : ${m.amount.compact()} / shin`;       // shin.tomato
+        dom_xym.innerText = `🌞🍅 : ${m.amount.compact()} / shin`;       // shin.tomato
       }
     }
   
@@ -530,9 +530,9 @@ transactionHttp
         break;    
       case "7A848BE35EA4C849": //☀️
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ ☀️🍅shin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🌞🍅shin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">☀️🍅shin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🌞🍅shin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;    
                  

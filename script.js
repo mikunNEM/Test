@@ -185,6 +185,31 @@ accountHttp.getAccountInfo(address)
       }
     }
     for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '7930B6BDAED90925') {
+        const dom_xym = document.getElementById('gmr-tomato');
+        dom_xym.innerText = `🤖🍅 : ${m.amount.compact()} / gmr`;       // gmr.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '7691E0E6C687B9C0') {
+        const dom_xym = document.getElementById('jaguar-tomato');
+        dom_xym.innerText = `🐆🍅 : ${m.amount.compact()} / jaguar`;       // jaguar.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '7969D73DA7ECB674') {
+        const dom_xym = document.getElementById('baha-tomato');
+        dom_xym.innerText = `🦸‍♂️🍅 : ${m.amount.compact()} / baha`;       // baha.tomato
+      }
+    }
+    for (let m of accountInfo.mosaics) {
+      if (m.id.id.toHex() === '7A848BE35EA4C849') {
+        const dom_xym = document.getElementById('shin-tomato');
+        dom_xym.innerText = `☀️🍅 : ${m.amount.compact()} / shin`;       // shin.tomato
+      }
+    }
+  
+    for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '6BED913FA20223F8') {
         const dom_xym = document.getElementById('xym-balance');
         dom_xym.innerText = `XYM : ${m.amount.compact()/1000000}`;       // XYM Balance
@@ -222,7 +247,7 @@ accountHttp.getAccountInfo(address)
       
       const M_ID = tx.mosaics[0].id.toHex();
     
-      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { // tomataoモザイクの時鳴らす
+      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C" || M_ID === "7930B6BDAED90925" || M_ID === "7691E0E6C687B9C0" || M_ID === "7969D73DA7ECB674" || M_ID === "7A848BE35EA4C849") { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
          window.setTimeout(function(){location.reload();},2000); // 2秒後にキャッシュを利用してページをリロード
       }
@@ -241,7 +266,7 @@ accountHttp.getAccountInfo(address)
       
       const M_ID = tx.mosaics[0].id.toHex();
     
-      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { // tomatoモザイクの時鳴らす
+      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C" || M_ID === "7930B6BDAED90925" || M_ID === "7691E0E6C687B9C0" || M_ID === "7969D73DA7ECB674" || M_ID === "7A848BE35EA4C849") { // tomatoモザイクの時鳴らす
         my_audio.play();  //サウンドを再生  
       }  
     });   
@@ -433,8 +458,6 @@ transactionHttp
            dom_amount.innerHTML = `<font color="#008000">👧🍅sheva.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;
-      ////////////////////////////////////////////////
-         
       case "05E545728E183EFA": //🏃‍♀️
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
            dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🏃‍♀️🍅drugn.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
@@ -483,9 +506,36 @@ transactionHttp
         }else { 
            dom_amount.innerHTML = `<font color="#008000">👨‍🎤🍅karriz.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
+        break;        
+      case "7930B6BDAED90925": //🤖
+        if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🤖🍅gmr.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }else { 
+           dom_amount.innerHTML = `<font color="#008000">🤖🍅gmr.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }
+        break; 
+      case "7691E0E6C687B9C0": //🐆
+        if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐆🍅jaguar.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }else { 
+           dom_amount.innerHTML = `<font color="#008000">🐆🍅jaguar.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }
         break;    
-         
-         
+      case "7969D73DA7ECB674": //🦸‍♂️
+        if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦸‍♂️🍅baha.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }else { 
+           dom_amount.innerHTML = `<font color="#008000">🦸‍♂️🍅baha.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }
+        break;    
+      case "7A848BE35EA4C849": //☀️
+        if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ ☀️🍅shin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }else { 
+           dom_amount.innerHTML = `<font color="#008000">☀️🍅shin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+        }
+        break;    
+                 
         default:
         console.log("不明なトマトモザイクです"); 
         break;  
@@ -496,7 +546,7 @@ transactionHttp
       
        const M_ID = tx.mosaics[0].id.toHex();
     
-       if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { //tomatoモザイクの時だけ表示する
+       if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C" || M_ID === "7930B6BDAED90925" || M_ID === "7691E0E6C687B9C0" || M_ID === "7969D73DA7ECB674" || M_ID === "7A848BE35EA4C849") { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加

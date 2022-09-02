@@ -220,9 +220,9 @@ accountHttp.getAccountInfo(address)
         var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding2.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
       
-      const M_lower = tx.mosaics[0].id.id.lower;
+      const M_ID = tx.mosaics[0].id.toHex();
     
-      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833 || M_lower === 3486533395 || M_lower === 2251310278 || M_lower === 3243553504 || M_lower === 886133073 || M_lower === 1451035188 || M_lower === 4271279660 || M_lower === 2383953658 || M_lower === 3980290267 || M_lower === "hatchet" || M_lower === "jammin" || M_lower === 261019193 || M_lower === 2343756445 || M_lower === 1706038924) { // tomataoモザイクの時鳴らす
+      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { // tomataoモザイクの時鳴らす
          my_audio.play();  //サウンドを再生
          window.setTimeout(function(){location.reload();},2000); // 2秒後にキャッシュを利用してページをリロード
       }
@@ -239,9 +239,9 @@ accountHttp.getAccountInfo(address)
         //var my_audio = new Audio("https://github.com/symbol/desktop-wallet/raw/dev/src/views/resources/audio/ding.ogg");
         my_audio.currentTime = 0;  //再生開始位置を先頭に戻す
       
-      const M_lower = tx.mosaics[0].id.id.lower;
+      const M_ID = tx.mosaics[0].id.toHex();
     
-      if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833 || M_lower === 3486533395 || M_lower === 2251310278 || M_lower === 3243553504 || M_lower === 886133073 || M_lower === 1451035188 || M_lower === 4271279660 || M_lower === 2383953658 || M_lower === 3980290267 || M_lower === "hatchet" || M_lower === "jammin" || M_lower === 261019193 || M_lower === 2343756445 || M_lower === 1706038924) { // tomatoモザイクの時鳴らす
+      if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { // tomatoモザイクの時鳴らす
         my_audio.play();  //サウンドを再生  
       }  
     });   
@@ -496,7 +496,7 @@ transactionHttp
       
        const M_lower = tx.mosaics[0].id.id.lower;
     
-  //     if (M_lower === 2316569883 || M_lower === 2601104190 || M_lower === 1520040868 || M_lower === 3240052016 || M_lower === 1174277947 || M_lower === 3160806695 || M_lower === 3429242073 || M_lower === 4261396887 || M_lower === 433448117 || M_lower === 3898813937 || M_lower === 544765461 || M_lower === 1984438313 || M_lower === 450889950 || M_lower === 2341342833 || M_lower === 3486533395 || M_lower === 2251310278 || M_lower === 3243553504 || M_lower === 886133073 || M_lower === 1451035188 || M_lower === 4271279660 || M_lower === 2383953658 || M_lower === 3980290267 || M_lower === "hatchet" || M_lower === "jammin" || M_lower === 261019193 || M_lower === 2343756445 || M_lower === 1706038924) { //tomatoモザイクの時だけ表示する
+       if (M_ID === "310378C18A140D1B" || M_ID === "5A8F12439B09B33E" || M_ID === "717C14465A99FBA4" || M_ID === "613E6D0FC11F4530" || M_ID === "581B528745FE0F3B" || M_ID === "22EB02FCBC661527" || M_ID === "725A2499CC6614D9" || M_ID === "509A58B6FDFFC197" || M_ID === "0B7766A119D5E4B5" || M_ID === "54ACEAF1E8632DF1" || M_ID === "0C1058BB20787615" || M_ID === "23A72A2876482029" || M_ID === "5FF7741F1AE008DE" || M_ID === "220DE9C58B8E0E71" || M_ID === "3F0B0C29CFD04713" || M_ID === "4F2DC8BA863044C6" || M_ID === "7B9DC57CC154B2E0" || M_ID === "14ABF8C934D15151" || M_ID === "3898DDE9567D0A34" || M_ID === "5D9D5C6BFE968E2C" || M_ID === "05E545728E183EFA" || M_ID === "6BE5318AED3E68DB" || M_ID === "7542C49F2737C4DE" || M_ID === "078FA8E61BB9BE9C" || M_ID === "6A44EB5C0F8ED639" || M_ID === "7ADA0B238BB2E29D" || M_ID === "7F1B538B65B0168C") { //tomatoモザイクの時だけ表示する
      　  dom_tx.appendChild(dom_txType);                    // dom_txType をdom_txに追加 
      　  dom_tx.appendChild(dom_hash);                      // dom_hash をdom_txに追加
      　  dom_tx.appendChild(dom_signer_address);            // dom_signer_address をdom_txに追加
@@ -505,7 +505,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
-  // 　  } 
+    　  } 
       }
     }
   })

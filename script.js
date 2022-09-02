@@ -16,7 +16,7 @@ setTimeout(() => {
 const address = symbol.Address.createFromRawAddress(window.SSS.activeAddress);
 
 const dom_addr = document.getElementById('wallet-addr');
-dom_addr.innerText = address.pretty();                                       // address.pretty() アドレスがハイフンで区切られた文字列で表示され見やすくなる
+dom_addr.innerText = address;        //.pretty();    ハイフン無し              // address.pretty() アドレスがハイフンで区切られた文字列で表示され見やすくなる
 
 accountHttp.getAccountInfo(address)
   .toPromise()

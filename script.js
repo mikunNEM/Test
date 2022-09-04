@@ -163,7 +163,7 @@ accountHttp.getAccountInfo(address)
     for (let m of accountInfo.mosaics) {
       if (m.id.id.toHex() === '078FA8E61BB9BE9C') {
         const dom_xym = document.getElementById('jammin-tomato');
-        dom_xym.innerText = `🦬🍅 : ${m.amount.compact()} / jammin`;       // jammin.tomato
+        dom_xym.innerText = `🐂🍅 : ${m.amount.compact()} / jammin`;       // jammin.tomato
       }
     }
     for (let m of accountInfo.mosaics) {
@@ -479,11 +479,11 @@ transactionHttp
            dom_amount.innerHTML = `<font color="#008000">🪓🍅hatchet.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break;    
-      case "078FA8E61BB9BE9C": //❔
+      case "078FA8E61BB9BE9C": //🐂
         if(tx.signer.address.address === address.address) {  // 送信アドレスとウォレットのアドレスが同じかどうかで表示を変える
-           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🦬🍅jammin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#FF0000">🥳 ➡️ 🐂🍅jammin.tomato : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }else { 
-           dom_amount.innerHTML = `<font color="#008000">🦬🍅jammin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
+           dom_amount.innerHTML = `<font color="#008000">🐂🍅jammin.tomato ➡️ 😳 : ${tx.mosaics[0].amount.lower}</font>`;     // 　数量
         }
         break; 
       case "6A44EB5C0F8ED639": //🙋‍♂️

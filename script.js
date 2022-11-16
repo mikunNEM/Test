@@ -234,6 +234,8 @@ accountHttp.getAccountInfo(address)
     listener.newBlock()
     .subscribe(block=>{
       console.log(block);
+      console.log("timestamp=");      /////////////////////
+      console.log(block.timestamp.toHex()); /////////////// 
     });
     
     //承認トランザクションの検知

@@ -235,8 +235,8 @@ accountHttp.getAccountInfo(address)
     .subscribe(block=>{
       console.log(block);
       console.log("timestamp=");                                            /////////////////////
-      const timestamp = 1615853185 + (parseInt(block.timestamp.toHex(), 16)/1000);   ///////////////
-      const date = new Date(timestamp);
+      var timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   ///////////////
+      var date = new Date(timestamp);
       console.log(date.getTime());
       console.log(date); 
     });

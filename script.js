@@ -236,12 +236,10 @@ accountHttp.getAccountInfo(address)
       console.log(block);
       console.log("timestamp=");                                                ///////////　　  　timestamp to Date 　　　　　　　//////////
       const timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   ///////////////
-      const date = new Date(timestamp*1000);
+      const date = new Date(timestamp * 1000);
       console.log(date.getTime());
       console.log(date); 
       
-      const timestampToTime = (timestamp) => {
-      const date = new Date(timestamp * 1000);
       const yyyy = `${date.getFullYear()}`;
       // .slice(-2)で文字列中の末尾の2文字を取得する
       // `0${date.getHoge()}`.slice(-2) と書くことで０埋めをする
@@ -251,9 +249,8 @@ accountHttp.getAccountInfo(address)
       const mm = `0${date.getMinutes()}`.slice(-2);
       const ss = `0${date.getSeconds()}`.slice(-2);
 
-      return `${yyyy}/${MM}/${dd} ${HH}:${mm}:${ss}`;
-      }
-
+      const timestampToTime = `${yyyy}/${MM}/${dd} ${HH}:${mm}:${ss}`;
+      
       timestamp = 100000000; // 1億
       console.log(timestampToTime(timestamp));
       

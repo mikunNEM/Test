@@ -234,8 +234,11 @@ accountHttp.getAccountInfo(address)
     listener.newBlock()
     .subscribe(block=>{
       console.log(block);
-      console.log("timestamp=");      /////////////////////
-      console.log(block.timestamp.toHex()); /////////////// 
+      console.log("timestamp=");                                            /////////////////////
+      const timestamp = EPOCH + parseInt(block.timestamp.toHex(),10)/1000;   ///////////////
+      const date = new Date(timestamp);
+      console.log(date.getTime());
+      console.log(date); 
     });
     
     //承認トランザクションの検知

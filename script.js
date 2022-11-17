@@ -251,8 +251,8 @@ accountHttp.getAccountInfo(address)
 
       const timestampToTime = `${yyyy}/${MM}/${dd} ${HH}:${mm}:${ss}`;
       
-      timestamp = 100000000; // 1億
-      console.log(timestampToTime(timestamp));
+      // timestamp = 100000000; // 1億
+      console.log(timestampToTime);
       
       
     });

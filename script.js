@@ -235,10 +235,9 @@ accountHttp.getAccountInfo(address)
     .subscribe(block=>{
       console.log(block);
       console.log("timestamp=");                                                ///////////　　  　timestamp to Date 　　　　　　　//////////
-      const timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   ///////////////
+      const timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   /////////////// Unit64 を 16進数に　変換したあと10進数に変換　
       const date = new Date(timestamp * 1000);
       console.log(date.getTime());
-      console.log(date); 
       
       const yyyy = `${date.getFullYear()}`;
       // .slice(-2)で文字列中の末尾の2文字を取得する
@@ -251,7 +250,6 @@ accountHttp.getAccountInfo(address)
 
       const timestampToTime = `${yyyy}/${MM}/${dd} ${HH}:${mm}:${ss}`;
       
-      // timestamp = 100000000; // 1億
       console.log(timestampToTime);
       
       

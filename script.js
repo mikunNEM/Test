@@ -236,7 +236,7 @@ accountHttp.getAccountInfo(address)
       console.log(block);
       console.log("timestamp=");                                            /////////////////////
       var timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   ///////////////
-      var date = new Date(timestamp);
+      var date = new Date(timestamp*1000);
       console.log(date.getTime());
       console.log(date); 
     });

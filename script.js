@@ -323,6 +323,7 @@ transactionHttp
       const dom_recipient_address = document.createElement('div');
       const dom_amount = document.createElement('div');
       const dom_message = document.createElement('div');
+      const dom_date = document.createElement('div');
 
       dom_txType.innerText = `Tx Type : ${getTransactionType(tx.type)}`;        //　文字列の結合 　Tx タイプ
       //dom_hash.innerText = `Tx Hash : ${tx.transactionInfo.hash}`;              //  文字列の結合　 Tx ハッシュ
@@ -562,6 +563,7 @@ transactionHttp
       
       
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
+      dom_date.innerText = `${timestampToTime}`;
       
        const M_ID = tx.mosaics[0].id.toHex();
     
@@ -572,6 +574,7 @@ transactionHttp
      　  dom_tx.appendChild(dom_recipient_address);         // dom_recipient_address をdom_txに追加
      　  dom_tx.appendChild(dom_amount);                    // dom_amount をdom_txに追加
      　  dom_tx.appendChild(dom_message);    　             // dom_message をdom_txに追加
+         dom_tx.appendChild(dom_date);                     //　dom_date　をdom_txに追加
     　   dom_tx.appendChild(document.createElement('hr'));  // 水平線を引く
     　   dom_txInfo.appendChild(dom_tx);                    // トランザクション情報を追加        
     　  } 

@@ -248,7 +248,7 @@ accountHttp.getAccountInfo(address)
       const mm = `0${date.getMinutes()}`.slice(-2);
       const ss = `0${date.getSeconds()}`.slice(-2);
 
-      const timestampToTime = `${yyyy}/${MM}/${dd} ${HH}:${mm}:${ss}`;
+      const timestampToTime = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
       
       console.log(timestampToTime);
       

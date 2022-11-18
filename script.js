@@ -234,25 +234,6 @@ accountHttp.getAccountInfo(address)
     listener.newBlock()
     .subscribe(block=>{
       console.log(block);
-      console.log("timestamp=");                                                ///////////　　  　timestamp to Date 　　　　　　　//////////
-      const timestamp = EPOCH + (parseInt(block.timestamp.toHex(), 16)/1000);   /////////////// Unit64 を 16進数に　変換したあと10進数に変換　
-      const date = new Date(timestamp * 1000);
-      console.log(date.getTime());
-      
-      const yyyy = `${date.getFullYear()}`;
-      // .slice(-2)で文字列中の末尾の2文字を取得する
-      // `0${date.getHoge()}`.slice(-2) と書くことで０埋めをする
-      const MM = `0${date.getMonth() + 1}`.slice(-2); // getMonth()の返り値は0が基点
-      const dd = `0${date.getDate()}`.slice(-2);
-      const HH = `0${date.getHours()}`.slice(-2);
-      const mm = `0${date.getMinutes()}`.slice(-2);
-      const ss = `0${date.getSeconds()}`.slice(-2);
-
-      const timestampToTime = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
-      
-      console.log(timestampToTime);
-      
-      
     });
     
     //承認トランザクションの検知
@@ -563,7 +544,29 @@ transactionHttp
       
       
       dom_message.innerText = `Message : ${tx.message.payload}`;     // 　メッセージ 
-      dom_date.innerText = `${timestampToTime}`;
+     
+      
+      console.log("timestamp=");                                                ///////////　　  　timestamp to Date 　　　　　　　//////////
+      const timestamp = EPOCH + (parseInt(tx.timestamp.toHex(), 16)/1000);   /////////////// Unit64 を 16進数に　変換したあと10進数に変換　
+      const date = new Date(timestamp * 1000);
+      console.log(date.getTime());
+      
+      const yyyy = `${date.getFullYear()}`;
+      // .slice(-2)で文字列中の末尾の2文字を取得する
+      // `0${date.getHoge()}`.slice(-2) と書くことで０埋めをする
+      const MM = `0${date.getMonth() + 1}`.slice(-2); // getMonth()の返り値は0が基点
+      const dd = `0${date.getDate()}`.slice(-2);
+      const HH = `0${date.getHours()}`.slice(-2);
+      const mm = `0${date.getMinutes()}`.slice(-2);
+      const ss = `0${date.getSeconds()}`.slice(-2);
+
+      const date = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
+      
+      console.log(date);
+      
+      dom_date.innerText = `${date}`;    //　日付
+      
+           
       
        const M_ID = tx.mosaics[0].id.toHex();
     

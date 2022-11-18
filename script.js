@@ -562,9 +562,9 @@ transactionHttp
 
       const ymdhms = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
       
-      console.log(ymdhm);
+      console.log(ymdhms);
       
-      dom_date.innerText = `${ymdhm}`;    //　日付
+      dom_date.innerText = `${ymdhms}`;    //　日付
       
            
       

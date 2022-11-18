@@ -560,11 +560,11 @@ transactionHttp
       const mm = `0${date.getMinutes()}`.slice(-2);
       const ss = `0${date.getSeconds()}`.slice(-2);
 
-      const date = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
+      const ymdhms = `${yyyy}-${MM}-${dd} ${HH}:${mm}:${ss}`;
       
-      console.log(date);
+      console.log(ymdhm);
       
-      dom_date.innerText = `${date}`;    //　日付
+      dom_date.innerText = `${ymdhm}`;    //　日付
       
            
       

@@ -564,7 +564,7 @@ transactionHttp
       
       console.log(ymdhms);
       
-      dom_date.innerHTML = `<p style="text-align: right">${ymdhms}</p>`;    //　日付  右寄せ
+      dom_date.innerHTML = `<font color="#0000ff"><p style="text-align: right">${ymdhms}</p></font>`;    //　日付  右寄せ
       
            
       

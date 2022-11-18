@@ -547,7 +547,7 @@ transactionHttp
      
       
       console.log("timestamp=");                                                ///////////　　  　timestamp to Date 　　　　　　　//////////
-      const timestamp = EPOCH + (parseInt(tx.timestamp.toHex(), 16)/1000);   /////////////// Unit64 を 16進数に　変換したあと10進数に変換　
+      const timestamp = EPOCH + (parseInt(tx.timestamp.transactionInfo.toHex(), 16)/1000);   /////////////// Unit64 を 16進数に　変換したあと10進数に変換　
       const date = new Date(timestamp * 1000);
       console.log(date.getTime());
       
